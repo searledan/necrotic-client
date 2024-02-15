@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.InetAddress;
 
+import org.necrotic.client.graphics.gameframe.GameFrame;
 import org.necrotic.client.tools.Misc;
 
 /**
@@ -54,6 +55,8 @@ public class Configuration {
 	
 	public static boolean FOG_ENABLED = false;
 	public static boolean GROUND_TEXT = true;
+
+	public static boolean RESIZABLE_SCREEN = true;
 	/**
 	 * The client will run in high memory with textures rendering
 	 */
@@ -71,7 +74,7 @@ public class Configuration {
 	 * Should the new fov be displayed?
 	 */
 	public static boolean TOGGLE_FOV = true;
-	
+
 	public final static String SERVER_HOST() {
 		return "rsps1.dansearle.cloud"; // your live server's IP
 

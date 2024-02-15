@@ -56,7 +56,7 @@ public class Save {
             object.addProperty("clan-chat-color", new Integer(client.clanChatColor));
             object.addProperty("split-chat", new Integer(client.variousSettings[502]));
             object.addProperty("ground-text", Configuration.GROUND_TEXT);
-           // object.add("split-chat", builder.toJsonTree(client.variousSettings[502]));
+            object.addProperty("resizable-screen", Configuration.RESIZABLE_SCREEN);
 
             String stringSave = "";
             for(int i = 0; i < client.quickPrayers.length; i++)

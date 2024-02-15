@@ -14478,6 +14478,10 @@ public class Client extends GameRenderer {
 		System.out.println(response);
 
 		if (response == 2) {
+			if (Configuration.RESIZABLE_SCREEN) {
+				client.toggleSize(ScreenMode.RESIZABLE);
+			}
+
 			finishLogin(client);
 			PlayerHandler.load(client);
 			return false;
@@ -16393,6 +16397,8 @@ public class Client extends GameRenderer {
 			setResizing(true);
 			super.setClickMode2(0);
 			if (mode == ScreenMode.FIXED) {
+				Configuration.RESIZABLE_SCREEN = false;
+				Save.settings(Client.getClient());
 				GameFrame.setScreenMode(mode);
 				gameScreenDrawX = 4;
 				gameScreenDrawY = 4;
@@ -16405,6 +16411,8 @@ public class Client extends GameRenderer {
 				welcomeScreenRaised = true;
 				clientZoom = 0;
 			} else if (mode == ScreenMode.RESIZABLE) {
+				Configuration.RESIZABLE_SCREEN = true;
+				Save.settings(Client.getClient());
 				GameFrame.setScreenMode(mode);
 				gameScreenDrawX = 0;
 				gameScreenDrawY = 0;
@@ -16413,6 +16421,8 @@ public class Client extends GameRenderer {
 				recreateClientFrame(false, RESIZABLE_WIDTH, RESIZABLE_HEIGHT, true, 0, true);
 				clientZoom = 480;
 			} else {
+				Configuration.RESIZABLE_SCREEN = false;
+				Save.settings(Client.getClient());
 				GameFrame.setScreenMode(ScreenMode.FULLSCREEN);
 				gameScreenDrawX = 0;
 				gameScreenDrawY = 0;

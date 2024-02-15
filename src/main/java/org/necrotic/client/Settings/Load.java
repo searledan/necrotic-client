@@ -86,6 +86,9 @@ public class Load {
             if(reader.has("ground-text")) {
                 Configuration.GROUND_TEXT = reader.get("ground-text").getAsBoolean();
             }
+            if(reader.has("resizable-screen")) {
+                Configuration.RESIZABLE_SCREEN = reader.get("resizable-screen").getAsBoolean();
+            }
             if(reader.has("quick-prayers")) {
                 String qp = reader.get("quick-prayers").getAsString();
                 for (int i = 0; i < qp.length(); i++)
