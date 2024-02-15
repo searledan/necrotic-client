@@ -5,7 +5,7 @@
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF/META-INF/MANIFEST.MF" />
       </element>
-      <element id="module-output" name="Necrotic_Client" />
+      <element id="module-output" name="Client" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/libs/alertify4j.jar" path-in-jar="/" />
