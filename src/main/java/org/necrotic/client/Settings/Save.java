@@ -72,11 +72,9 @@ public class Save {
 
             writer.write(builder.toJson(object));
             writer.close();
-
         } catch (Exception e) {
             System.out.println(e);
         }
-
-        }
     }
+}
 

@@ -23,12 +23,12 @@ import org.necrotic.Configuration;
 public class CacheDownloader {
 
 	private static final String CACHE_FILE_NAME = "NecroticCache.zip"; //The name of the actual .zip file
-	private static final String CACHE_URL = "http://necrotic.org/downloads/cache/"+CACHE_FILE_NAME; //The url to the .zip file
-	private static final String NEWEST_VERSION_FILE_URL = "http://necrotic.org/downloads/cache/cache_version.txt"; //The url to the current cache_versiont txt file
+	private static final String CACHE_URL = "http://172.166.205.178/cache/"+CACHE_FILE_NAME; //The url to the .zip file
+	private static final String NEWEST_VERSION_FILE_URL = "http://172.166.205.178/cache/cache_version.txt"; //The url to the current cache_versiont txt file
 	private static final String CURRENT_VERSION_FILE = "cache_version.txt"; //The location of the local cache_version txt file
 	
-	public static final String URL_TO_LOADING_IMAGES = "http://necrotic.org/downloads/images/";
-	public static final String MIRROR_URL_TO_LOADING_IMAGES = "http://necrotic.org/downloads/images/"; //If first link is broken, it will attempt to download from here
+	public static final String URL_TO_LOADING_IMAGES = "http://172.166.205.178/images/";
+	public static final String MIRROR_URL_TO_LOADING_IMAGES = "http://172.166.205.178/images/"; //If first link is broken, it will attempt to download from here
 	
 	public static boolean UPDATING = true;
 	

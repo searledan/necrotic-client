@@ -22,8 +22,8 @@ public class Configuration {
 	/** MAIN CONSTANTS **/
 	public final static String CLIENT_NAME = "Necrotic";
 	public final static int CLIENT_VERSION = 55;
-	public final static String CACHE_DIRECTORY_NAME = "NecroticCache"; //Cache folder name
-	public static final String SETTINGS_DIRECTORY_NAME = "NecroticSettings";
+	public final static String CACHE_DIRECTORY_NAME = "Cache";
+	public static final String SETTINGS_DIRECTORY_NAME = "Settings";
 	
 	public final static boolean JAGCACHED_ENABLED = false;
 	public final static String JAGCACHED_HOST  = "";
@@ -73,9 +73,9 @@ public class Configuration {
 	public static boolean TOGGLE_FOV = true;
 	
 	public final static String SERVER_HOST() {
-		//return "world1.necrotic.org"; // your live server's IP
+		return "172.166.205.178"; // your live server's IP
 
-		return "localhost"; // your local server's IP
+//		return "localhost"; // your local server's IP
 	}
 
 }

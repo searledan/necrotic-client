@@ -60,24 +60,24 @@ public final class Signlink implements Runnable {
 	}
 	
 	public static String getCacheDirectory() {
-		String cacheLoc = System.getProperty("user.home") + "/";
+		String cacheLoc = System.getProperty("user.home") + "/Necrotic/";
 		if(Configuration.DROPBOX_MODE) {
-			cacheLoc = "./";
+			cacheLoc = "./Necrotic/";
 		}
 		cacheLoc += Configuration.CACHE_DIRECTORY_NAME + "/";
 		File cacheDir = new File(cacheLoc);
 		if(!cacheDir.exists()) {
-			cacheDir.mkdir();
+			cacheDir.mkdirs();
 		}
 		return cacheLoc;
 	}
 	
 	public static String getSettingsDirectory() {
-		String cacheLoc = System.getProperty("user.home") + "/";
+		String cacheLoc = System.getProperty("user.home") + "/Necrotic/";
 		cacheLoc += Configuration.SETTINGS_DIRECTORY_NAME + "/";
 		File settingDir = new File(cacheLoc);
 		if(!settingDir.exists()) {
-			settingDir.mkdir();
+			settingDir.mkdirs();
 		}
 		return cacheLoc;
 	}
