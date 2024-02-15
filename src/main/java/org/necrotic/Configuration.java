@@ -73,7 +73,7 @@ public class Configuration {
 	public static boolean TOGGLE_FOV = true;
 	
 	public final static String SERVER_HOST() {
-		return "172.166.205.178"; // your live server's IP
+		return "rsps1.dansearle.cloud"; // your live server's IP
 
 //		return "localhost"; // your local server's IP
 	}
